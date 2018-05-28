@@ -26,7 +26,10 @@ int main() {
     std::fprintf(stderr, "\n");
     std::fprintf(stderr, "============auto iteration===================\n");
     for (auto& pair : str2int) {
-        std::fprintf(stderr, "%s->(id:%zu,insert_order:%zu)\n", pair.first.c_str(), pair.second.first, pair.second.second);
+        std::fprintf(stderr, "%s->(id:%zu,insert_order:%zu)\n",
+                pair.first.c_str(),
+                pair.second.first,
+                pair.second.second);
     }
 
     
@@ -34,7 +37,10 @@ int main() {
     for (auto iter = str2int.begin();
             iter != str2int.end();
             ++iter) {
-        std::fprintf(stderr, "%s->(id:%zu,insert_order:%zu)\n", iter->first.c_str(), iter->second.first, iter->second.second);
+        std::fprintf(stderr, "%s->(id:%zu,insert_order:%zu)\n",
+                iter->first.c_str(),
+                iter->second.first,
+                iter->second.second);
     }
 
     return 0;
