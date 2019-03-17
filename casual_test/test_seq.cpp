@@ -4,6 +4,8 @@
 #include <ctime>
 #include <cstdlib>
 
+//Just to make difference
+
 int main() {
     std::srand ( unsigned ( std::time(0) ) );
     const char* arr[] = {
